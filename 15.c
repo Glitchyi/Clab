@@ -1,28 +1,21 @@
-//Declare a union containing 5 string variables name house name, City name, state pin code. Each is a length of size C size user defined constant.Then read and display the address of a person using a variable of the Union.
+//Using structure read and print data of an employees  (name, employee ID and salary.)
 #include<stdio.h>
 void main(){
-    union person{
+    struct employee{
         char name[100];
-        char house[100];
-        char city[100];
-        char state[100];
-        char pin[100];
+        int id;
+        float salary;
     };
-    union person p;
-    printf("Enter the name of the person\n");
-    scanf("%s",p.name);
-    printf("Enter the house name\n");
-    scanf("%s",p.house);
-    printf("Enter the city name\n");
-    scanf("%s",p.city);
-    printf("Enter the state name\n");
-    scanf("%s",p.state);
-    printf("Enter the pin code\n");
-    scanf("%s",p.pin);
-    printf("The address of the person is\n");
-    printf("Name: %s\n",p.name);
-    printf("House name: %s\n",p.house);
-    printf("City name: %s\n",p.city);
-    printf("State name: %s\n",p.state);
-    printf("Pin code: %s\n",p.pin);
+    struct employee e;
+    printf("Enter the name of the employee\n");
+    scanf("%s",e.name);
+    printf("Enter the employee ID\n");
+    scanf("%d",&e.id);
+    printf("Enter the salary\n");
+    scanf("%f",&e.salary);
+    printf("The details of the employee are\n");
+    printf("Name: %s\n",e.name);
+    printf("Employee ID: %d\n",e.id);
+    printf("Salary: %f\n",e.salary);
 }
+

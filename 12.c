@@ -1,23 +1,21 @@
-//read a string ending with the dollar symbol store it in an array and count the number of vowels consonant and spaces in the string.
+
+//Read two strings, each one ending with a dollar symbol. Store them in an array and concatenate them without library functions.
 #include<stdio.h>
 void main(){
-    char a[100];
-    int i,j,n,vowel=0,consonant=0,space=0;
-    printf("Enter the string\n");
+    char a[100],b[100];
+    int i,j,n;
+    printf("Enter the first string\n");
     scanf("%s",a);
-    n=strlen(a);
+    printf("Enter the second string\n");
+    scanf("%s",b);
     for(i=0;a[i]!='\0';i++){
-        if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'){
-            vowel++;
-        }
-        else if(a[i]==' '){
-            space++;
-        }
-        else{
-            consonant++;
-        }
+        a[i]=a[i];
     }
-    printf("Number of vowels is %d\n",vowel);
-    printf("Number of consonants is %d\n",consonant);
-    printf("Number of spaces is %d\n",space);
+    for(j=0;b[j]!='\0';j++){
+        a[i]=b[j];
+        i++;
+    }
+    a[i]='\0';
+    printf("Concatenated string is %s\n",a);
 }
+

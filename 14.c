@@ -1,20 +1,21 @@
-//Using structure read and print data of an employees  (name, employee ID and salary.)
-#include<stdio.h>
-void main(){
-    struct employee{
-        char name[100];
-        int id;
-        float salary;
-    };
-    struct employee e;
-    printf("Enter the name of the employee\n");
-    scanf("%s",e.name);
-    printf("Enter the employee ID\n");
-    scanf("%d",&e.id);
-    printf("Enter the salary\n");
-    scanf("%f",&e.salary);
-    printf("The details of the employee are\n");
-    printf("Name: %s\n",e.name);
-    printf("Employee ID: %d\n",e.id);
-    printf("Salary: %f\n",e.salary);
+//distance formula in c using structures
+#include <stdio.h>
+#include <math.h>
+struct point
+{
+    float x;
+    float y;
+};
+int main()
+{
+    struct point p1, p2;
+    float d;
+    printf("Enter the coordinates of p1\n");
+    scanf("%f%f", &p1.x, &p1.y);
+    printf("Enter the coordinates of p2\n");
+    scanf("%f%f", &p2.x, &p2.y);
+    d=sqrt((p2.x-p1.x)*(p2.x-p1.x)+(p2.y-p1.y)*(p2.y-p1.y));
+    printf("The distance between p1 and p2 is %f\n", d);
+    return 0;
 }
+

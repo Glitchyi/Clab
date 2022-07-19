@@ -1,19 +1,17 @@
-//Read a string word stored in array and obtain its reward by using a user defined function.
+
+//Find the factorial of a given natural number N using recursive function.
 #include<stdio.h>
 void main(){
-    char a[100];
-    int n,i=0;
-    printf("Enter the string\n");
-    scanf("%[^\n]s",a);
-    for(i=0;a[i]!='\0';i++){
-        continue;
-    }
-    reward(a,i);
+    int n,i,fact=1;
+    printf("Enter the number\n");
+    scanf("%d",&n);
+    printf("The factorial of %d is %d\n",n,fact(n);
 }
-void reward(char a[],n){
-    char rev[100];
-    for(int i=n, j=0;i>0;i--,j++){
-        rev[j]=a[i];
+int fact(int n){
+    if(n==0){
+        return 1;
     }
-    printf("%s\n",rev);
+    else{
+        return n*fact(n-1);
+    }
 }
