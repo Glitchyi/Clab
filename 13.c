@@ -4,7 +4,7 @@ void main(){
     char a[100];
     int i,j,n,vowel=0,consonant=0,space=0;
     printf("Enter the string\n");
-    scanf("%s",a);
+    scanf("%[^\n]s",a);
     n=strlen(a);
     for(i=0;a[i]!='\0';i++){
         if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'){

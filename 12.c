@@ -8,10 +8,10 @@ void main(){
     scanf("%s",a);
     printf("Enter the second string\n");
     scanf("%s",b);
-    for(i=0;a[i]!='\0';i++){
+    for(i=0;a[i]!='$';i++){
         a[i]=a[i];
     }
-    for(j=0;b[j]!='\0';j++){
+    for(j=0;b[j]!='$';j++){
         a[i]=b[j];
         i++;
     }
