@@ -1,6 +1,4 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
 void main(){
-    char a[]="Hello";
-    char b[];
+    printf("Hello World!\n");
 }

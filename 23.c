@@ -1,0 +1,1 @@
+//Input and display the contents of an array using pointers.
