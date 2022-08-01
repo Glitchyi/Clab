@@ -4,8 +4,8 @@ void main(){
     int b = 20;
     int *p;
     p = &a;
-    printf("%d\n", *p);
+    int *p1;
     p = &b;
     printf("%d\n", *p);
-    printf("%d\n", a+b);
+    printf("%d\n", *p+*p1);
 }
