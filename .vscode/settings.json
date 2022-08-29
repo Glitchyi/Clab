@@ -1,4 +1,5 @@
 {
     "editor.defaultFormatter": null,
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "discord.enabled": true
 }

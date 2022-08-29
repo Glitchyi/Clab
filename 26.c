@@ -2,25 +2,26 @@
 #include<stdio.h>
 void main(){
     FILE *fp;
-    fp = fopen("26.txt", "r");
+    fp = fopen("26.txt", "r+");
     int c=0,w=0,l=0,i=0;
     char ch;
-    while (1){
-        ch = fgetc(fp);
-        if(ch == '\n'){
-            l++;
-        }else if(ch == ' '){
-            w++;
-        }else if(ch != '\n' && ch != ' ' && ch != EOF){
-            c++;
-        }
-        if(ch == EOF){
-            l++;
-            c--;
-            w+=l;
-            break;
-        }
-        i++;
-    }
+    fprintf(fp,"%d%d%d",c,w,l);
+    // while (1){
+    //     ch = fgetc(fp);
+    //     if(ch == '\n'){
+    //         l++;
+    //     }else if(ch == ' '){
+    //         w++;
+    //     }else if(ch != '\n' && ch != ' ' && ch != EOF){
+    //         c++;
+    //     }
+    //     if(ch == EOF){
+    //         l++;
+    //         c--;
+    //         w+=l;
+    //         break;
+    //     }
+    //     i++;
+    // }
     printf("c=%d w=%d l=%d\n", c, w, l);
 }
